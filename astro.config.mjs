@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://icec2025.entcomp.org',
 	integrations: [mdx(), sitemap()],
 });
