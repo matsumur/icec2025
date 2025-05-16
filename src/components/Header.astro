@@ -8,12 +8,29 @@ import { SITE_TITLE } from '../consts';
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/cfp">CFP</HeaderLink>
-			<HeaderLink href="/workshops">Workshops</HeaderLink>
+			<div class="dropdown">
+				<HeaderLink>Attending</HeaderLink>
+				<div class="dropdown-content">
+					<HeaderLink href="/registration">Registration</HeaderLink>
+					<HeaderLink href="/access">Access</HeaderLink>
+				</div>
+			</div>
+			<div class="dropdown">
+				<HeaderLink>Authors</HeaderLink>
+				<div class="dropdown-content">
+					<HeaderLink href="/cfp">CFP</HeaderLink>
+					<HeaderLink href="/workshops">Workshops</HeaderLink>
+				</div>
+			</div>
+
 			<HeaderLink href="/keynotes">Keynotes</HeaderLink>
-			<HeaderLink href="/registration">Registration</HeaderLink>
-			<HeaderLink href="/access">Access</HeaderLink>
+
+
+			<!-- <HeaderLink href="/registration">Registration</HeaderLink>
+			<HeaderLink href="/access">Access</HeaderLink> -->
 			<HeaderLink href="/organization">Organization</HeaderLink>
+
+
 			{/* <HeaderLink href="/blog">Blog</HeaderLink>　*/}
 			{/* <HeaderLink href="/about">About</HeaderLink>　*/}
 		</div>
@@ -54,6 +71,8 @@ import { SITE_TITLE } from '../consts';
 		padding: 0 1em;
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		position: relative;
+  		z-index: 10; /* 背景動画より上にする */
 	}
 	h2 {
 		margin: 0;
@@ -75,6 +94,12 @@ import { SITE_TITLE } from '../consts';
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
+	nav a:hover {
+		background-color: rgba(180, 160, 255, 0.2); /* 淡いグレー背景 */
+		border-radius: 4px; /* 角を少し丸めるとやさしい印象に */
+		transition: background-color 0.2s ease; /* なめらかな変化 */
+	}
+
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
@@ -88,4 +113,28 @@ import { SITE_TITLE } from '../consts';
 			display: none;
 		}
 	}
+	.dropdown {
+	position: relative;
+	display: inline-block;
+	}
+
+	.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0 2px 8px rgba(var(--black), 0.1);
+	z-index: 1;
+	min-width: 160px;
+	}
+
+	.dropdown-content a {
+	display: block;
+	padding: 0.5em 1em;
+	white-space: nowrap;
+	}
+
+	.dropdown:hover .dropdown-content {
+	display: block;
+	}
+
 </style>
