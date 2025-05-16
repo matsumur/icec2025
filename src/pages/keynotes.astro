@@ -3,10 +3,206 @@ import Layout from '../layouts/BlogPost.astro';
 ---
 
 <Layout
+  title="Keynotes"
+  description="The 24th International Federation for Information Processing – International Conference on Entertainment Computing (IFIP-ICEC 2025)"
+  pubDate={new Date('December 04 2024')}
+>
+
+<style>
+  .speaker {
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+  }
+  .bio {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 6px;
+    margin-top: 1em;
+  }
+  .keynote {
+    background-color: #eef5ff;
+    padding: 1em;
+    border-radius: 6px;
+    margin-top: 1em;
+  }
+  .speaker img {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+  .keynote h3 {
+    margin-top: 0;
+  }
+  .keynote-summary p {
+    margin-bottom: 1em;
+  }
+  .keynote-summary {
+    margin-top: 0.5em;
+  }
+.toc {
+  margin-bottom: 3em;
+  padding: 1em 1.5em;
+  /* border-left: 3px solid #999; */
+  background-color: #fafafa;
+}
+
+/* .toc h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #222;
+} */
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc ul li {
+  margin-bottom: 0.8em;
+}
+
+.toc ul li a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05em;
+  padding: 0.2em 0;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.toc ul li a:hover {
+  color: #2337ff;
+  background-color: #eeeeff;
+  border-bottom: 1px solid #2337ff;
+}
+
+
+
+</style>
+
+<section class="toc">
+  <h2>Keynote Speakers</h2>
+  <ul>
+    <li><a href="#shuji-utsumi">Shuji Utsumi</a></li>
+    <li><a href="#wei-ta-chu">Wei-Ta Chu</a></li>
+    <li><a href="#homei-miyashita">Homei Miyashita</a></li>
+  </ul>
+</section>
+
+<div class="speaker" id="shuji-utsumi">
+  <h2>Shuji Utsumi</h2>
+  <img src="/Utsumi.jpg" width="731" height="320" />
+  <div class="bio">
+    <p><strong>President and COO, Representative Director, SEGA CORPORATION</strong></p>
+    <p>Shuji Utsumi is a pioneering leader with a remarkable career spanning across major global companies in the gaming and entertainment industries. After joining Sony in 1986, Shuji established himself as a key figure in the company’s rise to prominence. He was integral to the creation of Sony Computer Entertainment and played a pivotal role in launching the PlayStation business in the United States, setting the stage for one of the most successful gaming platforms in history.</p>
+    <p>He later joined SEGA as Senior Vice President, where he contributed significantly to the launch of the “Dreamcast”, further cementing his legacy in the gaming world. After joining Disney Interactive Asia, he was also instrumental in the creation of the iconic Kingdom Hearts series, an achievement that has left a lasting impact on the gaming community by creating a groundbreaking world that showcased a collaboration between Disney and Square Enix characters.</p>
+    <p>Shuji went on to co-found Q Entertainment, where he produced the legendary games Lumines and Child of Eden. After serving as President of Warner Music Japan and CYBIRD, his journey continued with his appointment as CSO at SEGA. where he played a key role in SEGA's resurgence through the transmedia strategy of Sonic the Hedgehog, before being appointed President and COO, Representative Director (current position) in April 2024.</p>
+    <p>As an advocate for lore and innovation, Shuji has been leading SEGA to become a respected global brand while continuing to empower the gamers around the world, with his unique background combining both management and content development experience from a global perspective.</p>
+  </div>
+    <div class="keynote">
+    <h3>Keynote Title: Game Industry’s Evolution and Implications</h3>
+    <div class="keynote-summary">
+      <p>Having led the launch of PlayStation at Sony and the Dreamcast at SEGA, as well as working at Disney and Warner Music Japan, and founding his own game company, he draws on his extensive experience in the entertainment industry to examine the history and future of games. With technological advancements in semiconductors (CPU/GPU), the internet, and mobile technology, the industry has expanded its scale by incorporating diverse business models, from arcade and retail to Free-to-Play, advertising, merchandising, etc. As a result, games have become a mass “culture.” While already deeply influencing people's lifestyles and mindset, the industry is set to undergo further evolution driven by megatrends such as AI. This keynote will also introduce SEGA's case study, highlighting how the company is leveraging the expansion of the videogame as “culture” and technological advancements as opportunities, and is growing globally through a commitment to high-quality products and the Transmedia strategy.</p>
+    </div>
+  </div>
+</div>
+
+<div class="speaker" id="wei-ta-chu">
+  <h2>Wei-Ta Chu, Ph.D.</h2>
+  <img src="/Wei-TaChu.png" width="300" height="400" />
+  <div class="bio">
+    <p><strong>Professor, Department of Computer Science and Information Engineering, National Cheng Kung University</strong></p>
+    <p>Wei-Ta Chu received the B.S. and M.S. degrees in Computer Science from National Chi Nan University, Taiwan, in 2000 and 2002, and received the Ph.D. degree in Computer Science from National Taiwan University, Taiwan, in 2006. He is now a Professor in the Department of Computer Science and Information Engineering, National Cheng Kung University, Taiwan. His research interests include digital content analysis, multimedia indexing, deep learning, and pattern recognition.</p>
+    <p>He won IEEE MSA-TC Best Paper Award at ISCAS 2021 and the Best Full Technical Paper Award at ACM Multimedia 2006. He was awarded Outstanding Youth Electrical Engineer Award by the Chinese Institute of Electrical Engineering in 2017, the Distinguished Alumni Award presented by National Chi Nan University in 2014, the K. T. Li Young Researcher Award presented by Institute of Information & Computing Machinery in 2012. He was a visiting professor at Nagoya University in 2017 and Columbia University in 2008. He has been an associate editor of IEEE Transactions on Multimedia (TMM) since 2022 and won the Excellent Editor Award from TMM in 2024. He serves as a GC of ACM Multimedia Asia 2023, a TPC of MMM2025, TAAI 2024, MVA 2023, IEEE ICME 2022, ACM ICMR 2021, MMM 2020, and IEEE MMSP 2019.</p>
+  </div>
+  <div class="keynote">
+    <h3>Keynote Title: Visual Analysis for Entertainment: From Comics to Sports Videos</h3>
+    <div class="keynote-summary">
+      <p>This talk will explore recent advancements in visual analysis techniques applied to two widely enjoyed forms of entertainment: comics and sports videos. For comic analysis, we will cover methods ranging from low-level visual element detection—such as panel segmentation, face detection, and speech balloon extraction—to higher-level semantic tasks including drawing style analysis and character re-identification. We will also present a structured approach for automatically generating comics from sequential images, along with an initial attempt to leverage large language models for enhanced comic understanding.</p>
+      <p>In the domain of sports video analysis, the focus will be on 3D detection and tracking of balls, accessories, and players in multi-view video settings. These techniques enable the extraction of detailed game statistics, which can enrich viewer engagement and support athlete training and tactical development.</p>
+    </div>
+  </div>
+</div>
+
+<div class="speaker" id="homei-miyashita">
+  <h2>Homei Miyashita, Ph.D.</h2>
+  <img src="/HomeiMiyashita.jpg" width="512" height="342" />
+  <div class="bio">
+    <p><strong>Professor, Department Chair of Frontier Media Science, School of Interdisciplinary Mathematical Sciences, Meiji University</strong></p>
+    <p>Born in Firenze, Italy. Studied image science at the Faculty of Engineering, Chiba University, and music composition at the Graduate School of Education, Toyama University. Received a Ph.D. in Knowledge Science from the Japan Advanced Institute of Science and Technology, where he was awarded the Outstanding Graduate Award.</p>
+    <p>Joined the Faculty of Science and Technology at Meiji University in 2007. Moved to the Department of Frontier Media Science in the School of Interdisciplinary Mathematical Sciences in 2013. Started research on taste media in 2010.</p>
+    <p>In 2020, his project “Taste the TV (TTTV),” which embodies the concepts of “taste media,” “tele-taste,” and “tele-eat” that he had been promoting, was selected for the INNO-vation program of the Ministry of Internal Affairs and Communications. In collaboration with NTT DOCOMO and H2L, he developed the “FEEL TECH” taste sharing technology integrated with the human augmentation platform. This work gained considerable attention through TV commercials featuring actress Haruka Ayase.</p>
+    <p>In collaboration with Kirin Holdings, he developed the “Electric Salt” spoon, which use electricity to enhance the saltiness of low-salt foods. This product is now available for purchase. In 2024, he received the President of Science Council of Japan Award from the Cabinet Office’s Japan Open Innovation Award. The “Electric Salt” products also won two awards at the 2025 CES Innovation Awards® in the Digital Health and Accessibility & AgeTech categories.</p>
+    <p>In 2023, he received the Ig Nobel Prize (Nutrition).</p>
+  </div>
+  <div class="keynote">
+    <h3>Keynote Title: Taste, olfactory, and nutritional media: The New Frontier of Foods</h3>
+    <div class="keynote-summary">
+      <p>Welcome to the emerging world of "taste media," which allows us to record, reproduce, and even share taste sensations remotely. Building on this concept, "olfactory media" enables the playback of scents, offering new possibilities for immersive food experiences and memorable flavors. Meanwhile, "nutritional media" focuses on the digital delivery of nutritional content itself, enabling the modulation of nutrient intake according to individual health goals or dietary restrictions. By digitizing taste, smell, and nutrition, we can go beyond the limitations of traditional ingredients to recreate rare or geographically limited flavors, develop foods that accommodate allergies and intolerances, and design meals tailored to personal health profiles. These technologies pave the way for entirely new eating experiences-ones that are customizable, shareable, and optimized for both pleasure and well-being. In addition, the integration of generative AI into flavor design enables the creation of fully personalized meals, creating new value and market opportunities far beyond traditional food production. This keynote will present these breakthrough visions. In addition, a live demonstration of this concept - our "Key Experience" - will provide a first-hand look at the future of digital food experiences.</p>
+    </div>
+  </div>
+</div>
+
+</Layout>
+
+
+
+<!-- 
+<Layout
 	title="Keynotes"
 	description="The 24th International Federation for Information Processing – International Conference on Entertainment Computing (IFIP-ICEC 2025)"
 	pubDate={new Date('December 04 2024')}
 >
+
+
+<h2>Shuji Utsumi</h2>
+<img src="/Utsumi.jpg" width="731" height="320" />
+<p><strong>President and COO, Representative Director, SEGA CORPORATION</strong></p>
+<p>Shuji Utsumi is a pioneering leader with a remarkable career spanning across major global companies in the gaming and entertainment industries. After joining Sony in 1986, Shuji established himself as a key figure in the company’s rise to prominence. He was integral to the creation of Sony Computer Entertainment and played a pivotal role in launching the PlayStation business in the United States, setting the stage for one of the most successful gaming platforms in history.</p>
+<p>He later joined SEGA as Senior Vice President, where he contributed significantly to the launch of the “Dreamcast”, further cementing his legacy in the gaming world. After joining Disney Interactive Asia, he was also instrumental in the creation of the iconic Kingdom Hearts series, an achievement that has left a lasting impact on the gaming community by creating a groundbreaking world that showcased a collaboration between Disney and Square Enix characters.</p>
+<p>Shuji went on to co-found Q Entertainment, where he produced the legendary games Lumines and Child of Eden. After serving as President of Warner Music Japan and CYBIRD, his journey continued with his appointment as CSO at SEGA. where he played a key role in SEGA's resurgence through the transmedia strategy of Sonic the Hedgehog, before being appointed President and COO, Representative Director (current position) in April 2024.</p>
+<p>As an advocate for lore and innovation, Shuji has been leading SEGA to become a respected global brand while continuing to empower the gamers around the world, with his unique background combining both management and content development experience from a global perspective.</p>
+
+<h3>Keynote Title: Game Industry’s Evolution and Implications</h3>
+<p>Having led the launch of PlayStation at Sony and the Dreamcast at SEGA, as well as working at Disney and Warner Music Japan, and founding his own game company, he draws on his extensive experience in the entertainment industry to examine the history and future of games.</p>
+<p>With technological advancements in semiconductors (CPU/GPU), the internet, and mobile technology, the industry has expanded its scale by incorporating diverse business models, from arcade and retail to Free-to-Play, advertising, merchandising, etc. As a result, games have become a mass “culture.”</p>
+<p>While already deeply influencing people's lifestyles and mindset, the industry is set to undergo further evolution driven by megatrends such as AI. This keynote will also introduce SEGA's case study, highlighting how the company is leveraging the expansion of the videogame as “culture” and technological advancements as opportunities, and is growing globally through a commitment to high-quality products and the Transmedia strategy.</p>
+
+<hr />
+
+<h2>Wei-Ta Chu, Ph.D.</h2>
+<img src="/Wei-TaChu.png" width="300" height="400" />
+<p><strong>Professor, Department of Computer Science and Information Engineering, National Cheng Kung University</strong></p>
+<p>Wei-Ta Chu received the B.S. and M.S. degrees in Computer Science from National Chi Nan University, Taiwan, in 2000 and 2002, and received the Ph.D. degree in Computer Science from National Taiwan University, Taiwan, in 2006. He is now a Professor in the Department of Computer Science and Information Engineering, National Cheng Kung University, Taiwan. His research interests include digital content analysis, multimedia indexing, deep learning, and pattern recognition.</p>
+<p>He won IEEE MSA-TC Best Paper Award at ISCAS 2021 and the Best Full Technical Paper Award at ACM Multimedia 2006. He was awarded Outstanding Youth Electrical Engineer Award by the Chinese Institute of Electrical Engineering in 2017, the Distinguished Alumni Award presented by National Chi Nan University in 2014, the K. T. Li Young Researcher Award presented by Institute of Information & Computing Machinery in 2012. He was a visiting professor at Nagoya University in 2017 and Columbia University in 2008. He has been an associate editor of IEEE Transactions on Multimedia (TMM) since 2022 and won the Excellent Editor Award from TMM in 2024. He serves as a GC of ACM Multimedia Asia 2023, a TPC of MMM2025, TAAI 2024, MVA 2023, IEEE ICME 2022, ACM ICMR 2021, MMM 2020, and IEEE MMSP 2019.</p>
+
+<h3>Keynote Title: Visual Analysis for Entertainment: From Comics to Sports Videos</h3>
+<p>This talk will explore recent advancements in visual analysis techniques applied to two widely enjoyed forms of entertainment: comics and sports videos.</p>
+<p>For comic analysis, we will cover methods ranging from low-level visual element detection—such as panel segmentation, face detection, and speech balloon extraction—to higher-level semantic tasks including drawing style analysis and character re-identification. We will also present a structured approach for automatically generating comics from sequential images, along with an initial attempt to leverage large language models for enhanced comic understanding.</p>
+<p>In the domain of sports video analysis, the focus will be on 3D detection and tracking of balls, accessories, and players in multi-view video settings. These techniques enable the extraction of detailed game statistics, which can enrich viewer engagement and support athlete training and tactical development.</p>
+
+<hr />
+
+<h2>Homei Miyashita, Ph.D.</h2>
+<img src="/HomeiMiyashita.jpg" width="512" height="342" />
+<p><strong>Professor, Department Chair of Frontier Media Science, School of Interdisciplinary Mathematical Sciences, Meiji University</strong></p>
+<p>Born in Firenze, Italy. Studied image science at the Faculty of Engineering, Chiba University, and music composition at the Graduate School of Education, Toyama University. Received a Ph.D. in Knowledge Science from the Japan Advanced Institute of Science and Technology, where he was awarded the Outstanding Graduate Award.</p>
+<p>Joined the Faculty of Science and Technology at Meiji University in 2007. Moved to the Department of Frontier Media Science in the School of Interdisciplinary Mathematical Sciences in 2013. Started research on taste media in 2010.</p>
+<p>In 2020, his project “Taste the TV (TTTV),” which embodies the concepts of “taste media,” “tele-taste,” and “tele-eat” that he had been promoting, was selected for the INNO-vation program of the Ministry of Internal Affairs and Communications. In collaboration with NTT DOCOMO and H2L, he developed the “FEEL TECH” taste sharing technology integrated with the human augmentation platform. This work gained considerable attention through TV commercials featuring actress Haruka Ayase.</p>
+<p>In collaboration with Kirin Holdings, he developed the “Electric Salt” spoon, which use electricity to enhance the saltiness of low-salt foods. This product is now available for purchase. In 2024, he received the President of Science Council of Japan Award from the Cabinet Office’s Japan Open Innovation Award. The “Electric Salt” products also won two awards at the 2025 CES Innovation Awards® in the Digital Health and Accessibility & AgeTech categories.</p>
+<p>In 2023, he received the Ig Nobel Prize (Nutrition).</p>
+
+<h3>Keynote Title: Taste, olfactory, and nutritional media: The New Frontier of Foods</h3>
+<p>Welcome to the emerging world of "taste media," which allows us to record, reproduce, and even share taste sensations remotely. Building on this concept, "olfactory media" enables the playback of scents, offering new possibilities for immersive food experiences and memorable flavors.</p>
+<p>Meanwhile, "nutritional media" focuses on the digital delivery of nutritional content itself, enabling the modulation of nutrient intake according to individual health goals or dietary restrictions. By digitizing taste, smell, and nutrition, we can go beyond the limitations of traditional ingredients to recreate rare or geographically limited flavors, develop foods that accommodate allergies and intolerances, and design meals tailored to personal health profiles.</p>
+<p>These technologies pave the way for entirely new eating experiences—ones that are customizable, shareable, and optimized for both pleasure and well-being. In addition, the integration of generative AI into flavor design enables the creation of fully personalized meals, creating new value and market opportunities far beyond traditional food production.</p>
+<p>This keynote will present these breakthrough visions. In addition, a live demonstration of this concept - our "Key Experience" - will provide a first-hand look at the future of digital food experiences.</p>
+
+
+
 <h2>Shuji Utsumi</h2>
   <img src="/Utsumi.jpg" width="731" height="320"/>
   <p><strong>President and COO, Representative Director, SEGA CORPORATION</strong></p>
@@ -29,4 +225,4 @@ import Layout from '../layouts/BlogPost.astro';
   <p>In 2020, his project “Taste the TV (TTTV),” which embodies the concepts of “taste media,” “tele-taste,” and “tele-eat” that he had been promoting, was selected for the INNO-vation program of the Ministry of Internal Affairs and Communications. In collaboration with NTT DOCOMO and H2L, he developed the “FEEL TECH” taste sharing technology integrated with the human augmentation platform. This work gained considerable attention through TV commercials featuring actress Haruka Ayase.</p>
   <p>In collaboration with Kirin Holdings, he developed the “Electric Salt” spoon, which use electricity to enhance the saltiness of low-salt foods. This product is now available for purchase. In 2024, he received the President of Science Council of Japan Award from the Cabinet Office’s Japan Open Innovation Award. The “Electric Salt” products also won two awards at the 2025 CES Innovation Awards® in the Digital Health and Accessibility & AgeTech categories.</p>
   <p>In 2023, he received the Ig Nobel Prize (Nutrition).</p>
-</Layout>
+</Layout> -->
