@@ -78,10 +78,11 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color:#0662c5;
+
 }
 a:hover {
-	color: var(--accent);
+	color:#011a53;
 }
 p {
 	margin-bottom: 1em;
@@ -104,6 +105,16 @@ img {
 	height: auto;
 	border-radius: 8px;
 }
+img.sponsor {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0px;
+}
+
+a.sponsor {
+	text-decoration:none;
+}
+
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
