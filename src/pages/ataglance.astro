@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Program at a Glance"
+	description="The 24th International Federation for Information Processing – International Conference on Entertainment Computing (IFIP-ICEC 2025)"
+	pubDate={new Date('May 17 2025')}
+>
+<h2>Conference Schedule</h2>
+<table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; text-align: left; width: 100%;">
+  <thead style="background-color: #fde7a7;">
+    <tr>
+      <th></th>
+      <th>Aug 25</th>
+      <th>Aug 26</th>
+      <th>Aug 27</th>
+      <th>Aug 28</th>
+      <th>Aug 29</th>
+      <th>Aug 30</th>
+      <th>Aug 31</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+		<th>Events</th>
+        <td><strong>IFIP/IPSJ International Bridging</strong></td>
+        <td><strong>IFIP/IPSJ International Bridging</strong></td>
+        <td><strong>Workshops</strong></td>
+        <td><strong>Main Day 1</strong></td>
+        <td><strong>Main Day 2</strong></td>
+        <td><strong>Main Day 3</strong></td>
+        <td></td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>Participants of ICEC can join demos and some presentations in IPSJ domestic symposium</td>
+      <td>Participants of ICEC can join demos and some presentations in IPSJ domestic symposium</td>
+      <td>Reception</td>
+      <td>Opening Keynote1</td>
+      <td>Keynote2<br>Banquet</td>
+      <td>Keynote3<br>Closing<br>Awarding<br>TC14 business meeting</td>
+      <td>IFIP TC14 Business Networking</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+	<li>IPSJ domestic symposium is mainly in Japanese language</li>
+	<li>Reception will provide drinks and snacks at the conference venue</li>
+	<li>Banquet needs a ticket for each participant, which can be purchased in the registration site</li>
+</li>
+</ul>
+
+
+<h2>Time Table</h2>
+<img src="/timetable.png" width="1000"/>
+<ul>
+  <li>Please see the <a href="/session.html">Session Information</a> for the detailed presentation schedule of each session.</li>
+</ul>
+
+
+</Layout>
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.75em;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f5f5ff; /* 淡い紫系 */
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #fafafa; /* 偶数行の背景色で視認性UP */
+  }
+
+  table caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+
+  .responsive-table-container {
+    overflow-x: auto;
+  }
+
+  table.responsive-table {
+    /* border-collapse: collapse;
+    text-align: left;
+    width: 100%; */
+	  width: 100vw;
+  max-width: none;
+  margin-left: calc(-50vw + 50%);
+  }
+
+  @media (max-width: 768px) {
+    table.responsive-table {
+      min-width: 700px;
+    }
+  }
+
+  thead {
+    background-color: #fde7a7;
+  }
+</style>

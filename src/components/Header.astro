@@ -8,7 +8,16 @@ import { SITE_TITLE } from '../consts';
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/program">Program</HeaderLink>
+			<div class="dropdown">
+				<HeaderLink href="/program">Program</HeaderLink>
+				<div class="dropdown-content">
+					<HeaderLink href="/ataglance">Program at a Glance</HeaderLink>
+					<HeaderLink href="/session">Session Information</HeaderLink>
+					<HeaderLink href="/accepted">Accepted Paper</HeaderLink>
+				</div>
+			</div>
+
+			<!-- <HeaderLink href="/program">Program</HeaderLink> -->
 			<div class="dropdown">
 				<HeaderLink href="/attending">Attending</HeaderLink>
 				<div class="dropdown-content">
